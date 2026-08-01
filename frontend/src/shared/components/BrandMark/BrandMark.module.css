@@ -1,0 +1,14 @@
+.mark {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ff7a33, var(--color-primary));
+  box-shadow: 0 6px 14px rgba(255, 90, 0, 0.35);
+}
+
+.mark svg {
+  display: block;
+}

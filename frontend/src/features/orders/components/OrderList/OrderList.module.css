@@ -1,0 +1,37 @@
+.grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.state {
+  display: grid;
+  place-items: center;
+  gap: var(--space-3);
+  min-height: 240px;
+  padding: var(--space-8);
+  text-align: center;
+  background: var(--color-surface);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+}
+
+.state h3 {
+  color: var(--color-text);
+  font-size: 1.15rem;
+}
+
+.spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--color-border);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

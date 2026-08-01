@@ -1,0 +1,56 @@
+/** Tokens inspirados na identidade visual da Foody Delivery (laranja, contraste alto, UI operacional). */
+:root {
+  /* Brand */
+  --color-primary: #ff5a00;
+  --color-primary-hover: #e65000;
+  --color-primary-soft: #fff1e8;
+  --color-secondary: #1a2332;
+  --color-secondary-soft: #2a3648;
+
+  /* Semantic */
+  --color-success: #1f9d57;
+  --color-success-soft: #e6f7ed;
+  --color-warning: #e6a100;
+  --color-warning-soft: #fff6dd;
+  --color-info: #2f6fed;
+  --color-info-soft: #eaf1ff;
+  --color-danger: #d9382e;
+  --color-danger-soft: #fdeceb;
+
+  /* Neutrals */
+  --color-bg: #f3f5f8;
+  --color-bg-accent: #fff7f2;
+  --color-surface: #ffffff;
+  --color-border: #e2e7ee;
+  --color-border-strong: #c8d0db;
+  --color-text: #1a2332;
+  --color-text-muted: #5c6b7e;
+  --color-text-inverse: #ffffff;
+
+  /* Typography */
+  --font-display: 'Manrope', 'Segoe UI', sans-serif;
+  --font-body: 'Source Sans 3', 'Segoe UI', sans-serif;
+
+  /* Shape & elevation */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(26, 35, 50, 0.06);
+  --shadow-md: 0 8px 24px rgba(26, 35, 50, 0.08);
+  --shadow-lg: 0 16px 40px rgba(26, 35, 50, 0.12);
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Layout */
+  --header-height: 64px;
+  --content-max: 1120px;
+}

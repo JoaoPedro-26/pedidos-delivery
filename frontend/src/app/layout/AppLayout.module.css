@@ -1,0 +1,149 @@
+.shell {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  min-height: var(--header-height);
+  background: rgba(255, 255, 255, 0.86);
+  border-bottom: 1px solid var(--color-border);
+  backdrop-filter: blur(10px);
+}
+
+.headerInner {
+  min-height: var(--header-height);
+  width: min(100% - 2rem, var(--content-max));
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+  font-family: var(--font-display);
+}
+
+.brandText {
+  display: inline-flex;
+  align-items: baseline;
+  min-width: 0;
+}
+
+.brand strong {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--color-secondary);
+}
+
+.brandSuffix {
+  margin-left: 0.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.nav {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: var(--space-3);
+}
+
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.userName {
+  max-width: 160px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.navLink {
+  padding: 0.45rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-text-muted);
+}
+
+.navLink:hover {
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.logoutButton {
+  flex-shrink: 0;
+}
+
+.main {
+  width: min(100% - 2rem, var(--content-max));
+  margin: var(--space-8) auto;
+}
+
+.footer {
+  padding: var(--space-5);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--color-border);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 640px) {
+  .headerInner {
+    width: min(100% - 1.25rem, var(--content-max));
+    gap: var(--space-2);
+  }
+
+  .brand {
+    gap: var(--space-2);
+  }
+
+  .brand strong {
+    font-size: 0.95rem;
+  }
+
+  .brandSuffix {
+    font-size: 0.95rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .userName {
+    display: none;
+  }
+
+  .headerActions {
+    gap: var(--space-2);
+  }
+
+  .logoutButton {
+    min-height: 32px;
+    padding: 0 0.75rem;
+    font-size: 0.8rem;
+  }
+}
