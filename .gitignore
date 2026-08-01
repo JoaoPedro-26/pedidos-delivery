@@ -1,0 +1,22 @@
+# Logs / deps
+node_modules/
+dist/
+dist-ssr/
+*.local
+*.log
+npm-debug.log*
+
+# Backend
+backend/target/
+backend/data/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# Env
+.env
+.env.*
+!.env.example
